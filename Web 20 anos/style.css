@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(fonts/Montserrat-Light.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(101, 178, 246);
+    padding: 2vh;
+    z-index: 10;
+    top: 0;
+}
+
+header img{
+    width: 4.5%;
+    margin: 0vh 2vw;
+
+}
+
+header img:nth-child(1){
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+header img:nth-child(3){
+    animation-name: rotateRight;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+header h1{
+font-family: font1;
+}
+
+main {
+    background-image: url(img/homem-trabalhando-seu-laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 13vh;
+}
+
+.background{
+    background-color: rgba(0, 0, 255, 0.131);
+}
+
+main h1{
+    padding: 10vh;
+    margin: 0vh 15vw 0vh 15vw;
+    font-family: font2;
+    font-size: 2.3em;
+    z-index: 5;
+}
+
+main h2{
+    margin: 8vh 25vw;
+    padding-bottom: 16vh;
+    font-size: 1.5em;
+    font-family: font3;
+    z-index: 5;
+}
+
+.linha1{
+    position: absolute;
+    top: 103.5%;
+    left: 37vw;
+    width: 28%;
+    z-index: 5;
+}
+
+.primeiro {
+    background-size: 100%;
+    width: 100vw;
+    height: 58vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -8vh;
+    align-items: center;
+}
+
+.primeiro img{
+    width: 30vw;
+    height: 35vh;
+    border-radius: 10px;
+    margin: 0 10vw;
+}
+
+article div h3{
+    font-size: 2em;
+    margin: 0 9vw;
+}
+
+article div p{
+    font-size: 1.5em;
+    margin: 0 9vw;
+}
+
+.esquerda {
+    background-size: 100%;
+    width: 100vw;
+    height: 54vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.esquerda img{
+    width: 30vw;
+    height: 35vh;
+    border-radius: 10px;
+    margin: 0 10vw;
+}
+
+.direita {
+    background-size: 100%;
+    width: 100vw;
+    height: 54vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.direita img{
+    width: 30vw;
+    height: 35vh;
+    border-radius: 10px;
+    margin: 0 10vw;
+}
+
+.videos{
+    background-color: rgb(23, 97, 161);
+    background-size: 100%;
+}
+
+.videos p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5vh 8vw;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.video iframe{
+    margin: 0vh 10vw 5vh 10vw;
+    border-radius: 10px;
+}
+
+.videos div{
+    display: flex;
+    justify-content: center;
+    transition: 300ms;
+}
+
+.videos a input{
+    border-radius: 10px;
+    padding: 2vh 2vw;
+    font-size: 1.3em;
+    transition: 0.25s;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+
+.videos a input:hover{
+    background-color: rgb(101, 178, 246);
+    color: rgb(0, 0, 0);
+    transition: 0.25s;
+    border-color: rgb(66, 66, 66);
+    transform: scale(1.07);
+}
+
+footer h3{
+    text-align: center;
+    background-color: rgb(101, 178, 246);
+    padding: 1.5vh;
+}
+
+
+/*----------------------------Colors Sections---------------------------------*/
+section article:nth-child(1) {background-color: rgb(135, 135, 135);}
+section article:nth-child(2) {background-color: rgb(116, 200, 60);}
+section article:nth-child(3) {background-color: rgb(79, 124, 191);}
+section article:nth-child(4) {background-color: rgb(86, 30, 165);}
+section article:nth-child(5) {background-color: rgb(198, 161, 41);
+height: 61vh;}
+/*----------------------------Colors Sections---------------------------------*/
+
+/*----------------------------------------Animação----------------------------------*/
+@keyframes rotate {
+	0% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(15deg);
+	}
+}
+@keyframes rotateRight {
+	0% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+/*----------------------------------------Animação----------------------------------*/
+
